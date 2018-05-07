@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta charset="utf-8">
+    <title>資訊概論期中考 -- 林大有, 406410897</title>
+    <script>
+        function gopage(index) {
+            var p = document.getElementById("content");
+            switch (index) {
+                case 1:
+                    p.innerHTML = '<iframe width="800" height="600" src="p1/div.html" frameBorder="0"></iframe>';
+                    break;
+
+                case 2:
+                    p.innerHTML = '<iframe width="800" height="600" src="p2/tku60.html" frameBorder="0"></iframe>';
+                    break;
+                case 3:
+                    p.innerHTML = '<iframe width="800" height="600" src="p3/imagegallery.html" frameBorder="0"></iframe>';
+                    break;
+            }
+
+        }
+    </script>
+</head>
+
+<body onload="gopage(1)">
+    <div id="container">
+        <!--標題-->
+        <header>
+            <!--		<h1 id="text1">HTML5+CSS3</h1>-->
+            <h1 id="text2">資訊概論期中考 -- 林大有, 406410897</h1>
+        </header>
+        <!--左方連結-->
+        <aside>
+            <nav>
+                <ul>
+                    <li><a onclick="gopage(1)">Div demo</a></li>
+                    <li><a onclick="gopage(2)">淡江大戲</a></li>
+                    <li><a onclick="gopage(3)">我的畫廊</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <!--內容區-->
+        <article id="content">
+
+        </article>
+
+        <!--頁尾-->
+        <footer>歡迎光臨我的網站!!</footer>
+    </div>
+</body>
+</html>
